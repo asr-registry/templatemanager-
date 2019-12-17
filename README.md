@@ -4,4 +4,11 @@ VelocityTools is an integrated collection of Velocity subprojects with the commo
 
 #### Features
 
-- 
+- SMS Template
+- OTP Template
+- Mail Template
+- Exception Handling
+- use of Apache Velocity Tools
+- Easier Development
+- provide velocity template engine
+- and more
