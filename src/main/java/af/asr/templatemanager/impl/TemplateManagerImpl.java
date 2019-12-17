@@ -31,12 +31,7 @@ public class TemplateManagerImpl implements TemplateManager {
 		this.velocityEngine = engine;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see .core.templatemanager.spi.TemplateManager#merge(java.io.
-	 * InputStream, java.util.Map)
-	 */
+
 	@Override
 	public InputStream merge(InputStream is, Map<String, Object> values) throws IOException {
 		StringWriter writer = new StringWriter();
@@ -67,25 +62,13 @@ public class TemplateManagerImpl implements TemplateManager {
 		return null;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * .core.templatemanager.spi.TemplateManager#merge(java.lang.
-	 * String, java.io.Writer, java.util.Map)
-	 */
+
 	@Override
 	public boolean merge(String templateName, final Writer writer, Map<String, Object> values) throws IOException {
 		return merge(templateName, writer, values, DEFAULT_ENCODING_TYPE);
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * .core.templatemanager.spi.TemplateManager#merge(java.lang.
-	 * String, java.io.Writer, java.util.Map, java.lang.String)
-	 */
+
 	@Override
 	public boolean merge(String templateName, Writer writer, Map<String, Object> values, final String encodingType)
 			throws IOException {
